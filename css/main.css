@@ -28,6 +28,9 @@ html, body {
   font-family: 'DM Sans', sans-serif;
   letter-spacing: -0.5px;
   color: var(--text-color);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 /* General */
@@ -92,6 +95,8 @@ html, body {
 
 .nav-list {
   display: flex;
+  flex-wrap: wrap;
+  row-gap: 10px;
   align-items: center;
   column-gap: 40px;
   font-size: 16px;
@@ -231,6 +236,7 @@ html, body {
   flex-wrap: wrap;
   column-gap: 30px;
   row-gap: 30px;
+  justify-content: center;
 }
 
 .project {
@@ -314,6 +320,7 @@ html, body {
 /* Footer */
 
 .footer {
+  margin-top: auto;
   padding: 60px 0 50px;
   background-color: var(--dark-bg);
   color: var(--header-text);
@@ -338,4 +345,49 @@ html, body {
 
 .copyright p + p {
   margin-top: 0.5em;
+}
+
+/* Media queries */
+
+@media (max-width: 620px) {
+  .header {
+    min-height: unset;
+  }
+
+  .header__title {
+    font-size: 30px;
+  }
+  .header__title strong {
+    font-size: 40px;
+  }
+
+  .section {
+    padding: 40px 0;
+  }
+
+  .title-1 {
+    margin-bottom: 30px;
+    font-size: 40px;
+  }
+
+  .project__title {
+    font-size: 20px;
+  }
+
+  .footer {
+    padding: 40px 0 30px;
+  }
+
+  .footer__wrapper {
+    row-gap: 20px
+  }
+
+  .social {
+    column-gap: 20px;
+  }
+
+  .social__item {
+    width: 28px;
+  }
+
 }
