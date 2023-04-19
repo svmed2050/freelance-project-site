@@ -297,6 +297,11 @@ html, body {
   row-gap: 40px;
   margin: 0 auto;
 }
+
+.content-list a {
+  color: var(--accent);
+}
+
 .content-list__item {
   font-size: 18px;
   line-height: 1.5;
