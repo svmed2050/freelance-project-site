@@ -76,14 +76,16 @@ html, body {
 
 .nav-row {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
   column-gap: 30px;
   row-gap: 20px;
   flex-wrap: wrap;
+
 }
 
 .logo {
+  margin-right: auto;
   color: var(--header-text);
   font-size: 24px;
   font-family: 'Poppins', sans-serif;
@@ -131,6 +133,7 @@ html, body {
 /* Dark mode btn */
 
 .dark-mode-btn {
+  order: 9;
   display: flex;
   justify-content: space-between;
   width: 51px;
@@ -400,6 +403,16 @@ html, body {
   }
   .header__title strong {
     font-size: 40px;
+  }
+
+  /* Nav */
+
+  .nav-row {
+    justify-content: space-between;
+  }
+
+  .dark-mode-btn {
+    order: 0;
   }
 
   /* General */
