@@ -350,6 +350,10 @@ html, body {
 /* Media queries */
 
 @media (max-width: 620px) {
+
+
+  /* Header */
+
   .header {
     min-height: unset;
   }
@@ -361,6 +365,8 @@ html, body {
     font-size: 40px;
   }
 
+  /* General */
+
   .section {
     padding: 40px 0;
   }
@@ -370,9 +376,33 @@ html, body {
     font-size: 40px;
   }
 
+  .title-2 {
+    margin-bottom: 10px;
+    font-size: 30px;
+  }
+
+  /* Project */
+
   .project__title {
     font-size: 20px;
   }
+
+  .project-details__desc {
+    margin-bottom: 20px;
+    font-size: 22px;
+  }
+  
+  /* Content List */
+
+  .content-list {
+    row-gap: 20px;
+  }
+
+  .content-list__item {
+    font-size: 16px;
+  }
+
+  /* Footer */
 
   .footer {
     padding: 40px 0 30px;
